@@ -13,7 +13,7 @@ body {
 
 .main {
   margin-top: 2rem;
-  height: 90vh;
+  height: 70vh;
   width: auto;
   position: relative;
 }
@@ -43,7 +43,6 @@ body {
 /*--tablet--*/
 @media screen and (max-width: 1610px) {
   .main {
-    height: 80vh;
   }
   #mainTitle {
     margin: 10% 14%;
