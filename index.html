@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:ital@0;1&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/sass/main.css" />
+    <title>Jin's Website</title>
+  </head>
+  <body>
+    <!------------Header------------>
+
+    <div class="header" id="home">
+      <!--<img src="./resources/images/logo.png" alt="My page Logo.">-->
+      <!--<h1 class="title">My Website.</h1>-->
+      <ul id="nav" class="nav">
+        <li>
+          <a
+            ><button class="navSelector underlineNav" id="darkMode">
+              DarkMode
+            </button></a
+          >
+        </li>
+        <li>
+          <a href="#about">
+            <button class="navSelector underlineNav" id="nav1">
+              <span>01. </span> About
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="#portfolio">
+            <button class="navSelector underlineNav" id="nav2">
+              <span>02. </span>Projects
+            </button>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1a1jHY8iyWIN3jM51COJMbO9c1qhzvvb1/edit?usp=sharing&ouid=106460527191311707784&rtpof=true&sd=true"
+            target="_blank"
+          >
+            <button class="navSelector underlineNav" id="nav3">
+              <span>03. </span>CV
+            </button>
+          </a>
+        </li>
+
+        <!--<li>
+                    <a href="#contact"> <h2>Links</h2> </a> 
+                </li>-->
+      </ul>
+    </div>
+    <!-----------Title----------->
+    <div class="main">
+      <div class="mainTitle" id="mainTitle">
+        <h1>
+          <span id="hello">Hello,</span> <span id="myname">my name is </span>
+          <br />
+          Jin Jet Wong. <br />
+          <span id="iam">I am a Front-end Developer</span>
+        </h1>
+      </div>
+    </div>
+
+    <!-----------About----------->
+    <div class="about" id="about">
+      <h1 class="title" id="aboutTitle"><span>01.</span>About Me</h1>
+      <div class="aboutPage">
+        <p id="aboutDesc" class="description">
+          Hello! my name is Jin Jet Wong. I am starting my journey to become a
+          front-end developer and I am most interested in Web design. I am
+          currently halfway through Codecadamy’s
+          <a
+            class="underlineLink"
+            id="codecademy"
+            href="https://www.codecademy.com/learn/paths/front-end-engineer-career-path"
+            target="_blank"
+            >Front-End Engineers career path</a
+          >
+          course and am currently learning the React module.
+          <br />
+          <br />
+          I was introduced to coding in 2014 when I chose to study GCSE Computer
+          Science, where I learnt my first language, Python and Coded my first
+          project, a Higher or Lower game. During my time at university studying
+          a bachelors degree in Physics was where I took coding more practically
+          as I used python to analyse and graph data from experiments.
+          <br />
+          <br />
+
+          I have always had a passion for all things technology, from building
+          computers to learning about blockchain technology. In addition to my
+          love for tech, I also love art and design, as well
+          <a class="underlineLink" href="" id="building"> building stuff</a> and
+          finance.
+        </p>
+        <img src="./resources/images/about-image.jpeg" />
+        <div id="skills">
+          <h3>Skills</h3>
+          <img id="skillImage" src="./resources/images/htmlSkills.png" />
+          <img id="skillImage" src="./resources/images/cssSkills.png" />
+          <img id="skillImage" src="./resources/images/jsSkills.png" />
+          <img id="skillImage" src="./resources/images/gitSkills.png" />
+          <img id="skillImage" src="./resources/images/javaSkills.png" />
+          <img id="skillImage" src="./resources/images/pythonSkills.png" />
+        </div>
+      </div>
+    </div>
+
+    <!------------Projects------------>
+    <div class="portfolio" id="portfolio">
+      <h1 id="portTitle"><span>02.</span>My Projects</h1>
+
+      <div class="container">
+        <div class="project" id="artistSite">
+          <img src="./resources/images/ArtistWebsiteImg.png" alt="" />
+          <a
+            id="artistSiteLink"
+            class="projectLink"
+            href="./artistSite.html"
+            target="_blank"
+            >01.Artist Portfolio Website</a
+          >
+          <p>
+            This is a minimal Artist Portfolio Website design built using HTML,
+            CSS and Javascript.
+          </p>
+        </div>
+        <div class="project" id="weatherApp">
+          <img src="./resources/images/weatherApp.PNG" alt="" />
+          <a
+            id="weatherLink"
+            class="projectLink"
+            href="./weather.html"
+            target="_blank"
+            >02.Weather App</a
+          >
+          <p>
+            Simple Weather app built with HTML, CSS and Javascript. I used an
+            API from https://openweathermap.org.
+          </p>
+        </div>
+
+        <div class="project" id="jacobGuitar">
+          <img src="./resources/images/Jacobs Website project.PNG" alt="" />
+          <a
+            id="guitarLink"
+            class="projectLink"
+            href="./guitarLessons.html"
+            target="_blank"
+            >03.Guitar Lessons Landing Page</a
+          >
+          <p>
+            Landing page for a Client to promote guitar lessons. Built with
+            HTML, CSS and Javascript.
+          </p>
+        </div>
+        <!--
+                <div class="project">
+                    <img src="./resources/images/project 2.jpg" alt="">
+                    <h2>In progress</h2>
+                    <p> The night is dark and full of terrors. The winds of Winter. What is dead may never die. And now his watch is ended. The battle of the redgrass field. Unbowed, Unbent, Unbroken. All men must die.
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="./resources/images/project 3.jpg" alt="">
+                    <h2>In progress</h2>
+                    <p> The night is dark and full of terrors. The winds of Winter. What is dead may never die. And now his watch is ended. The battle of the redgrass field. Unbowed, Unbent, Unbroken. All men must die.
+                    </p>
+                </div>
+                -->
+      </div>
+    </div>
+    <div class="contact">
+      <div class="linkcontainer">
+        <p class="links" id="email">jjetwong@gmail.com</p>
+
+        <div class="links">
+          <a href="https://www.linkedin.com/in/jinjetwong" target="_blank">
+            <img src="./resources/images/linkedinLogo.png" />
+          </a>
+        </div>
+        <div class="links">
+          <a href="https://github.com/jjetwong" target="_blank">
+            <img src="./resources/images/githublogo.png" />
+          </a>
+        </div>
+      </div>
+      <!--<p id="footer" > Made with <span class="heart">♥</span> in London </p>-->
+    </div>
+    <script src="js\index.js"></script>
+  </body>
+</html>
