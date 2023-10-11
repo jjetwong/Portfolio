@@ -29,7 +29,7 @@ header {
   &__link {
     cursor: pointer;
     color: #252b2d;
-    font-weight: 700;
+    font-weight: 600;
     :hover {
       color: #558564;
     }
@@ -78,8 +78,8 @@ header {
       padding: 0;
     }
     &__link {
-      font-weight: 500;
-      font-size: 12px;
+      font-weight: 600;
+      font-size: 2.5vw;
     }
   }
 }

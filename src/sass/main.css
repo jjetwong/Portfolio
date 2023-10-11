@@ -113,7 +113,7 @@ header nav {
 .navbar__link {
   cursor: pointer;
   color: #252b2d;
-  font-weight: 700;
+  font-weight: 600;
 }
 .navbar__link :hover {
   color: #558564;
@@ -162,8 +162,8 @@ header nav {
     padding: 0;
   }
   .navbar__link {
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 2.5vw;
   }
 }
 .contact {
