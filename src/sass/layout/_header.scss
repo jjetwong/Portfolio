@@ -1,92 +1,57 @@
-.header {
-  width: 100%;
+header {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  flex-direction: row-reverse;
   align-items: center;
-  position: relative;
+  width: 100%;
+  height: 70px;
+  & nav {
+    width: auto;
+  }
 }
-.header .nav {
+.navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-weight: 400;
-  width: 100%;
-  flex-shrink: 1;
   text-align: right;
-  margin: 1rem;
-}
-
-.header .nav li {
-  display: inline-block;
-  margin: 0 20px;
-  padding: 0;
-}
-
-.header a {
-  text-decoration: none;
-}
-
-.navSelector {
-  display: block;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  color: #252b2d;
-  font-weight: 700;
-  margin: 12.5px 0;
-}
-
-#nav1 span,
-#nav2 span,
-#nav3 span {
-  color: #558564;
-}
-
-#darkMode {
-  display: block;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  color: #252b2d;
-  font-weight: 700;
-  margin: 12.5px 0;
-}
-
-#darkMode:hover {
-  text-decoration: none;
-  color: #558564;
-}
-
-.underlineNav {
-  display: inline-block;
-  position: relative;
-  color: #252b2d;
-  text-decoration: none;
-}
-
-.underlineNav::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #558564;
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-
-.underlineNav:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  margin-right: 2rem;
+  &__item {
+    width: auto;
+    margin: 0 20px;
+    padding: 0;
+    transition: color 0.3s ease-out;
+    :hover {
+      color: #558564;
+    }
+  }
+  &__link {
+    cursor: pointer;
+    color: #252b2d;
+    font-weight: 700;
+    margin: 12.5px 0;
+    :hover {
+      color: #558564;
+    }
+  }
+  &--underline {
+    position: relative;
+    color: #252b2d;
+    text-decoration: none;
+    ::after {
+      content: "click";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      color: #558564;
+      background-color: #558564;
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-out;
+    }
+    :hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
 }

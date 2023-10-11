@@ -19,49 +19,36 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/sass/main.css" />
-    <title>Jin's Website</title>
+    <title>Jin Jet Wong's Portfolio</title>
   </head>
   <body>
     <!------------Header------------>
 
-    <div class="header" id="home">
-      <!--<img src="./resources/images/logo.png" alt="My page Logo.">-->
-      <!--<h1 class="title">My Website.</h1>-->
-      <ul id="nav" class="nav">
-        <li>
-          <a
-            ><button class="navSelector underlineNav" id="darkMode">
-              DarkMode
-            </button></a
-          >
-        </li>
-        <li>
-          <a href="#about">
-            <button class="navSelector underlineNav" id="nav1">
-              <span>01. </span> About
-            </button>
-          </a>
-        </li>
-        <li>
-          <a href="#portfolio">
-            <button class="navSelector underlineNav" id="nav2">
-              <span>02. </span>Projects
-            </button>
-          </a>
-        </li>
-        <li>
-          <a href="" target="_blank">
-            <button class="navSelector underlineNav" id="nav3">
-              <span>03. </span>CV
-            </button>
-          </a>
-        </li>
+    <header id="home">
+      <nav>
+        <ul class="navbar" id="nav">
+          <li class="navbar__item navbar--underline">
+            <a class="navbar__link" id="darkMode"> DarkMode </a>
+          </li>
 
-        <!--<li>
-                    <a href="#contact"> <h2>Links</h2> </a> 
-                </li>-->
-      </ul>
-    </div>
+          <li class="navbar__item navbar--underline">
+            <a href="#about" class="navbar__link" id="nav1"> About Me </a>
+          </li>
+
+          <li class="navbar__item navbar--underline">
+            <a href="#portfolio" class="navbar__link" id="nav2">
+              My Projects
+            </a>
+          </li>
+
+          <li class="navbar__item navbar--underline">
+            <a href="" target="_blank" class="navbar__link" id="nav3">
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-----------Title----------->
     <div class="main">
       <div class="mainTitle" id="mainTitle">

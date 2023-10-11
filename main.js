@@ -15,7 +15,7 @@ const footer = document.getElementById("footer");
 
 let dark = false;
 
-navOne.onmouseover = function () {
+/*navOne.onmouseover = function () {
   navOne.style.color = "#558564";
 };
 navTwo.onmouseover = function () {
@@ -33,7 +33,7 @@ navTwo.onmouseout = function () {
 };
 navThree.onmouseout = function () {
   navThree.style.color = "#252B2D";
-};
+};*/
 
 function darkMode() {
   if (dark == false) {
@@ -50,12 +50,12 @@ function darkMode() {
     artistSite.style.borderBottom = "1px solid #E5E3DC";
     document.getElementById("aboutTitle").style.color = "#E5E3DC";
 
-    darkModeButton.onmouseover = function () {
+    /*darkModeButton.onmouseover = function () {
       darkModeButton.style.color = "#558564";
     };
     darkModeButton.onmouseout = function () {
       darkModeButton.style.color = "#E5E3DC";
-    };
+    };*/
 
     navOne.style.color = "#E5E3DC";
     navTwo.style.color = "#E5E3DC";
