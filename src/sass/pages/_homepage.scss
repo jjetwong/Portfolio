@@ -4,7 +4,7 @@ html {
   height: auto;
 }
 body {
-  background-color: #cbc8b9;
+  background-color: $base-light;
   width: 100%;
   display: grid;
 }
@@ -12,100 +12,83 @@ body {
 /*--------------------------Main------------------------------------*/
 
 .main {
-  margin-top: 2rem;
-  height: 70vh;
-  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 90vh;
+  width: 100%;
   position: relative;
-}
-#mainTitle {
-  width: auto;
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 2rem;
-  color: #252b2d;
-  margin: 10% 25%;
-  line-break: 0;
-  line-height: 80px;
-}
-
-#hello {
-  color: #558564;
-  font-size: 2rem;
-}
-#myname {
-  font-size: 2rem;
-}
-
-#iam {
-  font-size: 3.5rem;
+  &__title {
+    width: auto;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 3rem;
+    color: #252b2d;
+    line-break: 0;
+    line-height: 3rem;
+  }
+  &--hello {
+    color: #558564;
+    font-size: 1.5rem;
+  }
+  &--iam {
+    font-size: 2rem;
+  }
+  &__img {
+    position: relative;
+    bottom: 35px;
+    height: 270px;
+  }
 }
 
 /*--tablet--*/
-@media screen and (max-width: 1610px) {
+@media screen and (max-width: 1023px) {
   .main {
-  }
-  #mainTitle {
-    margin: 10% 14%;
-    font-size: 2rem;
-    line-height: 70px;
-  }
-  #hello {
-    font-size: 1.5rem;
-  }
-  #myname {
-    font-size: 1.5rem;
-  }
-
-  #iam {
-    font-size: 3rem;
+    height: 40vh;
+    &__title {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    &--hello {
+      font-size: 1rem;
+    }
+    &--iam {
+      font-size: 1.5rem;
+    }
+    &__img {
+      bottom: 30px;
+      height: 200px;
+    }
   }
 }
-@media screen and (max-width: 870px) {
-  .main {
-    height: 500px;
-  }
-  #mainTitle {
-    margin: 10% 10%;
-    font-size: 1.5rem;
-    line-height: 60px;
-  }
-  #hello {
-    font-size: 1.2rem;
-  }
-  #myname {
-    font-size: 1.2rem;
-  }
-
-  #iam {
-    font-size: 2rem;
-  }
-}
-
 /*--mobile--*/
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 767px) {
   .main {
-    height: 300px;
-  }
-  #mainTitle {
-    margin: 2%;
-    font-size: 1rem;
-    line-height: 40px;
-  }
-  #hello {
-    font-size: 1rem;
-  }
-  #myname {
-    font-size: 1rem;
-  }
-
-  #iam {
-    font-size: 2rem;
+    height: 40vh;
+    gap: 0;
+    &__title {
+      font-size: 6vw;
+      line-height: 5vw;
+      width: 50%;
+    }
+    &--hello {
+      font-size: 3vw;
+    }
+    &--iam {
+      font-size: 3vw;
+    }
+    &__img {
+      bottom: 12px;
+      height: auto;
+      width: 25%;
+    }
   }
 }
 /*--------------------------About------------------------------------*/
 
 .about {
-  padding: 0.2rem;
   height: 90vh;
   width: auto;
   position: relative;
@@ -116,7 +99,7 @@ body {
   font-family: "Montserrat";
   font-size: 2rem;
   color: #252b2d;
-  width: 100%;
+  width: auto;
 }
 
 .about h1 span {
@@ -294,7 +277,6 @@ body {
   font-family: "Montserrat";
   font-size: 2rem;
   color: #252b2d;
-  width: 100%;
 }
 .portfolio h1 span {
   color: #558564;
