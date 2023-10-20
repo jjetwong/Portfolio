@@ -1,0 +1,121 @@
+.portfolio {
+  margin: 0 25%;
+  height: auto;
+  width: auto;
+}
+.portfolio h1 {
+  margin: 1rem;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  color: #252b2d;
+}
+.portfolio h1 span {
+  color: #558564;
+}
+.portfolio .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 1rem 0;
+}
+.portfolio .container .project {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  color: #252b2d;
+  border-bottom: 1px solid #252b2d;
+}
+.portfolio .container .project img {
+  width: 90%;
+  margin: 1rem auto;
+  border-radius: 5px;
+}
+.projectLink {
+  margin: 1rem auto;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0;
+  color: #558564;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.projectLink::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #558564;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.projectLink:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.portfolio .container .project p {
+  margin: 1rem auto;
+  font-family: "Montserrat", serif;
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
+  font-family: "Roboto", serif;
+  font-size: 1.25rem;
+}
+
+/*--tablet--*/
+@media screen and (max-width: 1400px) {
+  .portfolio {
+    height: auto;
+    margin: 0 14%;
+  }
+  .portfolio h1 {
+    font-size: 1.7rem;
+  }
+  .projectLink {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 870px) {
+  .portfolio {
+    height: auto;
+  }
+  .portfolio h1 {
+    font-size: 1.7rem;
+  }
+  .projectLink {
+    font-size: 1.2rem;
+  }
+  .portfolio .container .project p {
+    font-size: 1rem;
+  }
+}
+
+/*--mobile--*/
+@media screen and (max-width: 550px) {
+  .portfolio {
+    height: auto;
+    margin: 2%;
+  }
+  .portfolio h1 {
+    font-size: 1.2rem;
+  }
+  .projectLink {
+    font-size: 0.9rem;
+  }
+  .portfolio .container .project p {
+    font-size: 0.7rem;
+  }
+}

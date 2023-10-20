@@ -1,0 +1,75 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  &__title {
+    width: auto;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 3rem;
+    color: #252b2d;
+    line-break: 0;
+    line-height: 3rem;
+  }
+  &--hello {
+    color: #558564;
+    font-size: 1.5rem;
+  }
+  &--iam {
+    font-size: 2rem;
+  }
+  &__img {
+    position: relative;
+    bottom: 35px;
+    height: 270px;
+  }
+}
+
+/*--tablet--*/
+@media screen and (max-width: 1023px) {
+  .main {
+    height: 40vh;
+    &__title {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    &--hello {
+      font-size: 1rem;
+    }
+    &--iam {
+      font-size: 1.5rem;
+    }
+    &__img {
+      bottom: 30px;
+      height: 200px;
+    }
+  }
+}
+/*--mobile--*/
+@media screen and (max-width: 767px) {
+  .main {
+    height: 30vh;
+    gap: 0;
+    &__title {
+      font-size: 6vw;
+      line-height: 5vw;
+      width: 50%;
+    }
+    &--hello {
+      font-size: 3vw;
+    }
+    &--iam {
+      font-size: 3vw;
+    }
+    &__img {
+      bottom: 12px;
+      height: auto;
+      width: 25%;
+    }
+  }
+}

@@ -4,7 +4,12 @@
 @import "./base/normalize";
 @import "./base/typography";
 
+@import "./components/animations";
+
 @import "./layout/header";
 @import "./layout/footer";
+@import "./layout/title";
+@import "./layout/about";
+@import "./layout/projects";
 
 @import "./pages/homepage";
