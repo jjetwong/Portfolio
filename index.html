@@ -115,64 +115,85 @@
       </article>
 
       <!------------Projects------------>
-      <div class="portfolio" id="portfolio">
-        <h1 id="portTitle">My Projects</h1>
-
-        <div class="container">
-          <div class="project">
-            <img src="./src/images/ohmyfood-website.PNG" alt="" />
+      <article class="projects" id="portfolio">
+        <h1 class="projects__title">My Projects</h1>
+        <ul class="projects__container">
+          <li class="projects__project">
+            <img
+              class="projects__img"
+              src="./src/images/ohmyfood-website.PNG"
+              alt=""
+            />
             <a
-              class="projectLink"
+              class="projects__link underline-link"
               href="https://oc-p2-ohmyfood.netlify.app/"
               target="_blank"
               >01. OhMyFood Restaurant booking</a
             >
-            <p>
+            <p class="projects__desc">
               This is mobile first restaurant/menu booking website built using
               HTML and Sass. It is fully responsive and includes a wide range of
               animations.
             </p>
-          </div>
-          <div class="project">
-            <img src="./src/images/booki-website.PNG" alt="" />
+          </li>
+
+          <li class="projects__project">
+            <img
+              class="projects__img"
+              src="./src/images/booki-website.PNG"
+              alt=""
+            />
             <a
-              class="projectLink"
+              class="projects__link underline-link"
               href="https://oc-p1-booki.netlify.app/"
               target="_blank"
               >02. Booki Holiday booking</a
             >
-            <p>
+            <p class="projects__desc">
               This is a fully responsive website for booking holidays and
               hotels. built using HTML and CSS.
             </p>
-          </div>
-          <div class="project" id="weatherApp">
-            <img src="./src/images/weather-app.PNG" alt="" />
+          </li>
+
+          <li class="projects__project" id="weatherApp">
+            <img
+              class="projects__img"
+              src="./src/images/weather-app.PNG"
+              alt=""
+            />
             <a
               id="weatherLink"
-              class="projectLink"
+              class="projects__link underline-link"
               href="https://weather-app-jjetwong.netlify.app/"
               target="_blank"
               >03.Weather App</a
             >
-            <p>
+            <p class="projects__desc">
               Simple Weather app built with HTML, CSS and Javascript using an
               API from https://openweathermap.org.
             </p>
-          </div>
+          </li>
 
-          <div class="project" id="jacobGuitar">
-            <img src="./src/images/jacobs-guitar-lessons.PNG" alt="" />
-            <a id="guitarLink" class="projectLink" href="" target="_blank"
+          <li class="projects__project" id="jacobGuitar">
+            <img
+              class="projects__img"
+              src="./src/images/jacobs-guitar-lessons.PNG"
+              alt=""
+            />
+            <a
+              id="guitarLink"
+              class="projects__link underline-link"
+              href=""
+              target="_blank"
               >04. Guitar Lessons Landing Page</a
             >
-            <p>
+            <p class="projects__desc">
               Landing page for a Client to promote guitar lessons. Built with
               HTML and CSS.
             </p>
-          </div>
-        </div>
-      </div>
+          </li>
+        </ul>
+      </article>
     </main>
     <div class="contact">
       <div class="linkcontainer">

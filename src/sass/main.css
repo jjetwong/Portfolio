@@ -379,6 +379,7 @@ header nav {
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
 }
 .about__skills-title {
   margin-top: 30px;
@@ -430,11 +431,10 @@ header nav {
 @media screen and (max-width: 767px) {
   .about {
     height: auto;
-    margin: 0px 10%;
   }
   .about__title {
     padding-top: 50px;
-    font-size: 5vw;
+    font-size: 4.5vw;
     line-height: 5vw;
   }
   .about__main {
@@ -463,131 +463,101 @@ header nav {
     margin-top: 20px;
   }
 }
-.portfolio {
-  margin: 0 25%;
+.projects {
+  margin: 0 20%;
   height: auto;
   width: auto;
 }
-
-.portfolio h1 {
-  margin: 1rem;
-  font-family: "Montserrat";
+.projects__title {
+  padding-top: 80px;
   font-size: 2rem;
-  color: #252b2d;
+  width: auto;
 }
-
-.portfolio h1 span {
-  color: #558564;
-}
-
-.portfolio .container {
+.projects__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   margin: 1rem 0;
 }
-
-.portfolio .container .project {
+.projects__project {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
-  width: 100%;
-  height: auto;
+  margin: 1rem 0;
+  height: 420px;
+  width: 47%;
   align-items: center;
-  color: #252b2d;
   border-bottom: 1px solid #252b2d;
 }
-
-.portfolio .container .project img {
-  width: 90%;
+.projects__img {
+  width: 100%;
   margin: 1rem auto;
   border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
-.projectLink {
-  margin: 1rem auto;
-  font-family: "Montserrat", serif;
+.projects__link {
   font-weight: 600;
   font-size: 1.25rem;
   text-align: center;
-  margin: 0;
   color: #558564;
   text-decoration: none;
   display: inline-block;
   position: relative;
 }
-
-.projectLink::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #558564;
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-
-.projectLink:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.portfolio .container .project p {
+.projects__desc {
   margin: 1rem auto;
-  font-family: "Montserrat", serif;
   font-size: 1rem;
   text-align: center;
   width: 80%;
-  font-family: "Roboto", serif;
-  font-size: 1.25rem;
 }
 
-/*--tablet--*/
-@media screen and (max-width: 1400px) {
-  .portfolio {
+@media screen and (max-width: 1023px) {
+  .projects {
+    margin: 0 10%;
+  }
+  .projects__title {
+    font-size: 1.5rem;
+  }
+  .projects__container {
+    justify-content: center;
+  }
+  .projects__project {
     height: auto;
-    margin: 0 14%;
+    width: 90%;
   }
-  .portfolio h1 {
-    font-size: 1.7rem;
-  }
-  .projectLink {
+  .projects__link {
     font-size: 1.2rem;
   }
-}
-@media screen and (max-width: 870px) {
-  .portfolio {
-    height: auto;
-  }
-  .portfolio h1 {
-    font-size: 1.7rem;
-  }
-  .projectLink {
-    font-size: 1.2rem;
-  }
-  .portfolio .container .project p {
-    font-size: 1rem;
+  .projects__desc {
+    font-size: 0.9rem;
   }
 }
 /*--mobile--*/
-@media screen and (max-width: 550px) {
-  .portfolio {
+@media screen and (max-width: 767px) {
+  .projects__title {
+    font-size: 4.5vw;
+  }
+  .projects__container {
+    justify-content: center;
+  }
+  .projects__project {
     height: auto;
-    margin: 2%;
+    width: 100%;
+    margin: 0.5rem 0;
   }
-  .portfolio h1 {
-    font-size: 1.2rem;
+  .projects__img {
+    margin: 1rem auto;
   }
-  .projectLink {
-    font-size: 0.9rem;
+  .projects__link {
+    font-size: 4vw;
   }
-  .portfolio .container .project p {
-    font-size: 0.7rem;
+  .projects__desc {
+    margin: 0.3rem auto;
+    font-size: 3.5vw;
+    width: 100%;
   }
 }
 html {

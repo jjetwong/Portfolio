@@ -23,6 +23,7 @@
     width: 35%;
     border-radius: 20px;
     object-fit: cover;
+    box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
   }
   &__skills-title {
     margin-top: 30px;
@@ -79,10 +80,9 @@
 @media screen and (max-width: 767px) {
   .about {
     height: auto;
-    margin: 0px 10%;
     &__title {
       padding-top: 50px;
-      font-size: 5vw;
+      font-size: 4.5vw;
       line-height: 5vw;
     }
     &__main {
