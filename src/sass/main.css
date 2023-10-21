@@ -400,6 +400,26 @@ header nav {
   margin: 10px 10px;
 }
 
+@media screen and (min-width: 1024px) {
+  .about {
+    width: auto;
+    margin: 0px 20%;
+  }
+  .about__title {
+    padding-top: 80px;
+    font-size: 2rem;
+    width: auto;
+  }
+  .about__main {
+    flex-wrap: nowrap;
+  }
+  .about__desc {
+    min-width: 500px;
+  }
+  .about__img {
+    min-width: 330px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .about {
     display: flex;
@@ -514,6 +534,18 @@ header nav {
   width: 80%;
 }
 
+@media screen and (min-width: 1024px) {
+  .projects__container {
+    min-width: 770px;
+  }
+  .projects__project {
+    height: 30vw;
+    min-height: 420px;
+    max-height: 550px;
+    width: 47%;
+    min-width: 370px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .projects {
     margin: 0 10%;
