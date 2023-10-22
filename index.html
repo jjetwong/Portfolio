@@ -23,9 +23,9 @@
   </head>
   <body>
     <!------------Header------------>
-    <header id="home">
-      <nav>
-        <ul class="navbar" id="nav">
+    <header id="header">
+      <nav id="nav">
+        <ul class="navbar">
           <li class="navbar__item navbar--underline">
             <a href="#" class="navbar__link"> Home </a>
           </li>
@@ -35,9 +35,7 @@
           </li>
 
           <li class="navbar__item navbar--underline">
-            <a href="#portfolio" class="navbar__link" id="nav2">
-              My Projects
-            </a>
+            <a href="#projects" class="navbar__link" id="nav2"> My Projects </a>
           </li>
 
           <li class="navbar__item navbar--underline">
@@ -53,7 +51,7 @@
     <!-----------Title----------->
     <main>
       <article class="main">
-        <h1 class="main__title">
+        <h1 class="main__title" id="mainTitle">
           <span class="main--hello">Hello, my name is</span> <br />
           Jin Jet Wong <br />
           <span class="main--iam"> and I am a Web Developer.</span>
@@ -114,10 +112,10 @@
       </article>
 
       <!------------Projects------------>
-      <article class="projects" id="portfolio">
+      <article class="projects" id="projects">
         <h1 class="projects__title">My Projects</h1>
         <ul class="projects__container">
-          <li class="projects__project">
+          <li class="projects__card">
             <img
               class="projects__img"
               src="./src/images/ohmyfood-website.PNG"
@@ -136,7 +134,7 @@
             </p>
           </li>
 
-          <li class="projects__project">
+          <li class="projects__card">
             <img
               class="projects__img"
               src="./src/images/booki-website.PNG"
@@ -154,7 +152,7 @@
             </p>
           </li>
 
-          <li class="projects__project" id="weatherApp">
+          <li class="projects__card" id="weatherApp">
             <img
               class="projects__img"
               src="./src/images/weather-app.PNG"
@@ -174,7 +172,7 @@
             </p>
           </li>
 
-          <li class="projects__project" id="jacobGuitar">
+          <li class="projects__card" id="jacobGuitar">
             <img
               class="projects__img"
               src="./src/images/jacobs-guitar-lessons.PNG"
@@ -195,23 +193,29 @@
         </ul>
       </article>
     </main>
-    <div class="contact" id="contact">
-      <div class="linkcontainer">
-        <p class="links" id="email">jjetwong@gmail.com</p>
 
-        <div class="links">
+    <footer class="footer" id="contact">
+      <ul class="footer__container">
+        <li class="footer__links">
+          <p class="links" id="email">jjetwong@gmail.com</p>
+        </li>
+
+        <li class="footer__links">
           <a href="https://www.linkedin.com/in/jinjetwong" target="_blank">
-            <img src="./src/images/linkedinLogo.png" />
+            <img
+              class="footer__links-img"
+              src="./src/images/linkedinLogo.png"
+            />
           </a>
-        </div>
-        <div class="links">
+        </li>
+
+        <li class="footer__links">
           <a href="https://github.com/jjetwong" target="_blank">
-            <img src="./src/images/githublogo.png" />
+            <img class="footer__links-img" src="./src/images/githublogo.png" />
           </a>
-        </div>
-      </div>
-      <!--<p id="footer" > Made with <span class="heart">♥</span> in London </p>-->
-    </div>
-    <script src="./main.js"></script>
+        </li>
+      </ul>
+    </footer>
+    <script src="./src/js/darkMode.js"></script>
   </body>
 </html>

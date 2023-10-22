@@ -1,7 +1,6 @@
-.contact {
+.footer {
   width: 100%;
   margin: 0;
-  font-family: "Montserrat";
   font-weight: 600;
   text-align: center;
   display: flex;
@@ -9,71 +8,36 @@
   justify-content: center;
   height: 50px;
   position: relative;
-}
-.contact h1 {
-  font-size: 3rem;
-  margin: auto;
-}
-.contact .linkcontainer {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: auto;
-  margin-bottom: 0.7rem;
-}
-.contact .linkcontainer .email {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-  align-items: center;
-  align-content: center;
-  width: 250px;
-  margin: 0;
-  color: #252b2d;
-}
-.contact .linkcontainer .email h2 {
-  font-size: 1rem;
-  margin: 0.3rem;
-}
-
-#email {
-  margin: 0.2rem;
-}
-
-.contact .linkcontainer .links {
-  margin: 2rem;
-}
-.contact .linkcontainer .links a img {
-  width: 23px;
-}
-
-.contact p {
-  color: #252b2d;
-}
-.heart {
-  color: #558564;
-}
-/*--tablet--*/
-/*--mobile--*/
-@media screen and (max-width: 550px) {
-  .contact {
-    height: 100px;
+  &__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: auto;
+    margin-bottom: 0.7rem;
   }
-  .contact .linkcontainer {
-    flex-wrap: wrap;
-    height: 20px;
-    margin: 0;
+  &__links {
+    color: black;
+    margin: 2rem;
   }
-  .contact .linkcontainer .links {
-    margin: 0 1rem;
+  &__links-img {
+    width: 23px;
   }
-  #email {
+}
+@media screen and (max-width: 767px) {
+  .footer {
     text-align: center;
-    font-size: 0.8rem;
-  }
-  .contact p {
-    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    position: relative;
+    &__links {
+      margin: 1rem auto;
+    }
+    &__links-img {
+      width: 23px;
+    }
   }
 }

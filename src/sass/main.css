@@ -112,7 +112,7 @@ header {
   align-items: center;
   width: 100%;
   height: 70px;
-  background-color: #cbc8b9;
+  background-color: #e5e3dc;
   z-index: 99;
   box-shadow: 0px 1px 5px 0px rgba(153, 153, 153, 0.52);
 }
@@ -191,10 +191,9 @@ header nav {
     font-size: 2.5vw;
   }
 }
-.contact {
+.footer {
   width: 100%;
   margin: 0;
-  font-family: "Montserrat";
   font-weight: 600;
   text-align: center;
   display: flex;
@@ -203,13 +202,7 @@ header nav {
   height: 50px;
   position: relative;
 }
-
-.contact h1 {
-  font-size: 3rem;
-  margin: auto;
-}
-
-.contact .linkcontainer {
+.footer__container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -218,63 +211,28 @@ header nav {
   width: auto;
   margin-bottom: 0.7rem;
 }
-
-.contact .linkcontainer .email {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-  align-items: center;
-  align-content: center;
-  width: 250px;
-  margin: 0;
-  color: #252b2d;
-}
-
-.contact .linkcontainer .email h2 {
-  font-size: 1rem;
-  margin: 0.3rem;
-}
-
-#email {
-  margin: 0.2rem;
-}
-
-.contact .linkcontainer .links {
+.footer__links {
+  color: black;
   margin: 2rem;
 }
-
-.contact .linkcontainer .links a img {
+.footer__links-img {
   width: 23px;
 }
 
-.contact p {
-  color: #252b2d;
-}
-
-.heart {
-  color: #558564;
-}
-
-/*--tablet--*/
-/*--mobile--*/
-@media screen and (max-width: 550px) {
-  .contact {
-    height: 100px;
-  }
-  .contact .linkcontainer {
-    flex-wrap: wrap;
-    height: 20px;
-    margin: 0;
-  }
-  .contact .linkcontainer .links {
-    margin: 0 1rem;
-  }
-  #email {
+@media screen and (max-width: 767px) {
+  .footer {
     text-align: center;
-    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    position: relative;
   }
-  .contact p {
-    font-size: 0.8rem;
+  .footer__links {
+    margin: 1rem auto;
+  }
+  .footer__links-img {
+    width: 23px;
   }
 }
 .main {
@@ -292,7 +250,6 @@ header nav {
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 3rem;
-  color: #252b2d;
   line-break: 0;
   line-height: 3rem;
 }
@@ -379,7 +336,7 @@ header nav {
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
+  box-shadow: 0px 5px 10px 0px rgba(49, 49, 49, 0.5);
 }
 .about__skills-title {
   margin-top: 30px;
@@ -501,11 +458,10 @@ header nav {
   align-content: center;
   margin: 1rem 0;
 }
-.projects__project {
+.projects__card {
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
-  height: 420px;
   width: 47%;
   align-items: center;
   border-bottom: 1px solid #252b2d;
@@ -514,7 +470,7 @@ header nav {
   width: 100%;
   margin: 1rem auto;
   border-radius: 5px;
-  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
+  box-shadow: 0px 5px 10px 0px rgba(49, 49, 49, 0.5);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -538,9 +494,9 @@ header nav {
   .projects__container {
     min-width: 770px;
   }
-  .projects__project {
-    height: 30vw;
-    min-height: 420px;
+  .projects__card {
+    height: 32vw;
+    min-height: 440px;
     max-height: 550px;
     width: 47%;
     min-width: 370px;
@@ -554,9 +510,10 @@ header nav {
     font-size: 1.5rem;
   }
   .projects__container {
+    flex-direction: column;
     justify-content: center;
   }
-  .projects__project {
+  .projects__card {
     height: auto;
     width: 90%;
   }
@@ -575,7 +532,7 @@ header nav {
   .projects__container {
     justify-content: center;
   }
-  .projects__project {
+  .projects__card {
     height: auto;
     width: 100%;
     margin: 0.5rem 0;
@@ -599,7 +556,7 @@ html {
 }
 
 body {
-  background-color: #cbc8b9;
+  background-color: #e5e3dc;
   width: 100%;
   display: grid;
   color: #252b2d;
